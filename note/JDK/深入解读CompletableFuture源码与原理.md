@@ -43,7 +43,7 @@ CompletableFuture类提供了非常多的方法供我们使用，包括了runAsy
 
 **runAsync()**，异步运行，
 
-```
+``` java
 @Test
     public void runAsyncExample() throws Exception {
         ExecutorService executorService = Executors.newSingleThreadExecutor();

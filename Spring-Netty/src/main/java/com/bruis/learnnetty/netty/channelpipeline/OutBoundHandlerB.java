@@ -7,7 +7,7 @@ import io.netty.channel.ChannelPromise;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author
+ * @author auto
  */
 public class OutBoundHandlerB extends ChannelOutboundHandlerAdapter {
     @Override

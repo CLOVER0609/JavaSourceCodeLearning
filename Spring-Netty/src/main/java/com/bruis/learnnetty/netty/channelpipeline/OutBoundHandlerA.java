@@ -5,7 +5,8 @@ import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
 
 /**
- * @author
+ * @author auto
+ *
  */
 public class OutBoundHandlerA extends ChannelOutboundHandlerAdapter {
 

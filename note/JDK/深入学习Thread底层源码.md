@@ -75,7 +75,7 @@ public final static int MAX_PRIORITY = 10;
 
 #### 4.1 start 启动线程
 
-```
+``` java
 // 该方法可以创建一个新的线程出来
 public synchronized void start() {
     // 如果没有初始化，抛异常
@@ -111,7 +111,7 @@ private native void start0();
 
 下面只贴出部分关键源码：
 
-```
+``` java
 // 无参构造器，线程名字自动生成
 public Thread() {
     init(null, null, "Thread-" + nextThreadNum(), 0);
@@ -161,13 +161,13 @@ private void init(ThreadGroup g, Runnable target, String name,
 
 当我们调用某个线程的这个方法时，这个方法会挂起调用线程，直到被调用线程结束执行，调用线程才会继续执行。
 
-```
+``` java
     public final void join() throws InterruptedException {
         join(0);
     }
 ```
 
-```
+``` java
     public final synchronized void join(long millis)
     throws InterruptedException {
         long base = System.currentTimeMillis();
@@ -252,7 +252,7 @@ interrupt 中文是打断的意思，意思是可以打断中止正在运行的�
 
 我们举一个例子来说明如何打断 WAITING 的线程，代码如下：
 
-```
+``` java
 @Test
 public void testInterrupt() throws InterruptedException {
   Thread thread = new Thread(new Runnable() {

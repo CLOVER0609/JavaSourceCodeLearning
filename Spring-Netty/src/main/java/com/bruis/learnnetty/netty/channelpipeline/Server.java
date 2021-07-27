@@ -11,7 +11,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.AttributeKey;
 
 /**
- * @author
+ * @author  auto
  */
 public final class Server {
 

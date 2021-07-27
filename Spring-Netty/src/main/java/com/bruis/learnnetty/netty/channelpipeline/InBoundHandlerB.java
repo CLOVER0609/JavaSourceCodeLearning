@@ -4,7 +4,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
- * @author
+ * @author auto
  */
 public class InBoundHandlerB extends ChannelInboundHandlerAdapter {
     @Override
